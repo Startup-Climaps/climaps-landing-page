@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.btn-container, .section-container, .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.round-btn {
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.section {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.logo-container img {
+    height: 50px;
+}
