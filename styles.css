@@ -30,6 +30,7 @@
 .logo-container img {
     height: 50px;
 }
+<<<<<<< HEAD
 .card-container-wrapper {
     display: flex;
     justify-content: center;
@@ -174,3 +175,71 @@
     border: none;
   }
    */
+=======
+
+.botonesimagenes {
+    color: white;
+    padding: 20px 75px;
+    border-radius: 25px;
+    border-color: white;
+    text-decoration: none;
+}
+
+a.btn1banner{
+    background-color: cadetblue;
+    color: white;
+    padding: 14px 75px;
+    border-radius: 25px;
+    border-color: white;
+    border: 2px solid white;
+    text-decoration: none;
+}
+a.btn2banner{
+    background-color: #4CBB88;
+    color: white;
+    padding: 14px 75px;
+    border-radius: 25px;
+    border-color: white;
+    border: 2px solid white;
+    text-decoration: none;
+}
+a.btn1banner, a:hover{
+    background-color:#4AE49A;
+    color: white;
+    padding: 14px 75px;
+    border-radius: 25px;
+    border-color: white;
+    text-decoration: none;
+}
+
+
+.Contenedormapas {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin-top: 200px;
+}
+  
+.columna {
+    flex: 1; 
+}
+  
+.image1 {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 0;
+}
+
+.titulocol{
+    font-size:50px;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 400px;
+    
+}
+>>>>>>> feature/David
