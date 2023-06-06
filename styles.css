@@ -1,9 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #514D54,#4AE49A);
+    height: 100vh;
+    
+  }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #f8f9fa;
+    padding: 10px 20px;
+    margin: 20px;
+    overflow: hidden;
+    backdrop-filter: brightness(0.8)
 }
 
 .btn-container, .section-container, .logo-container {
@@ -11,14 +20,29 @@
     align-items: center;
 }
 
+.borderless-btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer; 
+}
 .round-btn {
     border: none;
-    border-radius: 50%;
+    border-radius: 100px;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    background-color: #007bff;
+    width: 128px;  
+}
+.round-btn.login {
+    background-color: #4ae49a;
     color: white;
+}
+.round-btn.signup {
+    background-color: #D6FFEB;
+    color: #4AE49A;
 }
 
 .section {
@@ -29,4 +53,8 @@
 
 .logo-container img {
     height: 50px;
+}
+.logo-text {
+    color: #4AE49A;
+    margin: 0 10px;
 }
