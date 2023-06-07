@@ -30,3 +30,66 @@
 .logo-container img {
     height: 50px;
 }
+
+section.ofrecemos {
+    width: auto;
+    height: 1500px;
+    background: #aaa;
+    position: relative;
+}
+
+.titulito {
+    font-size: 32px;
+    position: absolute;
+    top: auto;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.parrafito {
+    font-size: 16px;
+    line-height: 40px;
+    position: absolute;
+    top: 150px;
+    width: 430px;
+    right: 55%;
+    text-align: justify;
+}
+
+.tablet {
+    width: 400px;
+    height: 450px;
+    font-size: 28px;
+    line-height: 0;
+    position: absolute;
+    left: 55%;
+    top: 200px;
+}
+
+.laptop {
+    width: 400px;
+    height: 450px;
+    font-size: 28px;
+    line-height: 0;
+    position: absolute;
+    left: 55%;
+    top: 900px;
+}
+
+.mobile {
+    width: 400px;
+    height: 450px;
+    font-size: 28px;
+    line-height: 0;
+    position: absolute;
+    right: 55%;
+    top: 500px;
+}
+
+.imagen {
+    width: 400px;
+    height: 430px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 8px solid #4AE49A;
+}
