@@ -30,3 +30,29 @@
 .logo-container img {
     height: 50px;
 }
+
+#nosotros {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    margin: 5px;
+}
+
+.fixed-image {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+}
+
+.text-container {
+    margin: 5px;
+}
+
