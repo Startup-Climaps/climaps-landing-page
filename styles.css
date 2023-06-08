@@ -1,48 +1,76 @@
+html {
+  scroll-behavior: smooth;
+ }
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #514D54,#4AE49A);
     height: 100vh;
-    
+    background: white;
   }
-.navbar {
+  .navbar {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     margin: 20px;
-    overflow: hidden;
-    backdrop-filter: brightness(0.8)
-}
+    backdrop-filter: brightness(0.5);
+    z-index: 100;
+    top: 0;
+    
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background-color: #111;
+  }  
 
-.btn-container, .section-container, .logo-container {
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn-container, .section-container, .logo-container {
     display: flex;
     align-items: center;
 }
-
 .borderless-btn {
-    border: none;
-    background-color: transparent;
-    color: white;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer; 
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer; 
 }
 .round-btn {
-    border: none;
-    border-radius: 100px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    width: 128px;  
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  width: 128px;  
 }
 .round-btn.login {
-    background-color: #4ae49a;
-    color: white;
+  background-color: #4ae49a;
+  color: white;
+  align-items: center;
 }
 .round-btn.signup {
-    background-color: #D6FFEB;
-    color: #4AE49A;
+  background-color: #D6FFEB;
+  color: #4AE49A;
+  align-items: center;
 }
 
 .section {
@@ -53,13 +81,56 @@ body {
 
 .logo-container img {
     height: 50px;
+    width: 50px;
 }
-<<<<<<< HEAD
+.logo-container.txt{
+  color:#4AE49A;
+  margin: 10px;
+}
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle-bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+@media (max-width: 1272px) {
+  
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+
+  .menu-toggle.active .menu-toggle-bar {
+    background-color: gray;
+  }
+  .menu-toggle.active ~ ul li {
+    display: block;
+  }
+  .logo-container.inactive{
+    display: none;
+    
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    display: none;
+    margin: 5px 0;
+  }
+}
 section.ofrecemos {
     width: auto;
     height: 1500px;
-    background: #aaa;
+    background: #ffffff;
     position: relative;
 }
 
@@ -118,9 +189,7 @@ section.ofrecemos {
     border-radius: 16px;
     border: 8px solid #4AE49A;
 }
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .card-container-wrapper {
     display: flex;
     justify-content: center;
@@ -230,9 +299,28 @@ section.ofrecemos {
     width: 100%;
     height: 150vh;
   }
+  .mapas{
+    background-image: url("images/bck1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 190vh;
+ 
+  }
+  .content{
+    background-image: url("images/bck1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 190vh;
+    
+  }
 
-  /* .contact-section {
+  .contact-section {
     padding: 20px;
+    height: 700px;
   }
   
   h1 {
@@ -246,26 +334,27 @@ section.ofrecemos {
   }
   
   input[type="text"] {
-    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 250px;
     padding: 10px;
     border: 2px solid #808080;
-    border-radius: 0;
     margin-bottom: 10px;
   }
   
   .edit-input {
-    border-radius: 50%;
+    border-radius:20px;
   }
   
   button[type="submit"] {
     padding: 10px 20px;
-    border-radius: 50%;
+    border-radius: 20px;
     background-color: #666666;
     color: white;
     border: none;
   }
    */
-=======
 
 .botonesimagenes {
     color: white;
@@ -274,11 +363,22 @@ section.ofrecemos {
     border-color: white;
     text-decoration: none;
 }
+.columna1{
+  margin-right: 150px;
+  margin-bottom: 300px;
+}
+
+.txtmapas{
+  font: size 50px;
+  color: white;
+  text-align: left;
+  margin-bottom: 40px;
+}
 
 a.btn1banner{
     background-color: cadetblue;
     color: white;
-    padding: 14px 75px;
+    padding: 7px 50px;
     border-radius: 25px;
     border-color: white;
     border: 2px solid white;
@@ -287,28 +387,51 @@ a.btn1banner{
 a.btn2banner{
     background-color: #4CBB88;
     color: white;
-    padding: 14px 75px;
+    font-size: 12px;
+    padding: 7px 50px;
     border-radius: 25px;
     border-color: white;
     border: 2px solid white;
     text-decoration: none;
+       margin-left: 30px;
 }
 a.btn1banner, a:hover{
+  margin-left:30px;
     background-color:#4AE49A;
     color: white;
-    padding: 14px 75px;
+    padding: 7px 50px;
     border-radius: 25px;
     border-color: white;
     text-decoration: none;
 }
+.titulocol{
+  font-size:50px;
+  color:white;
+  -webkit-text-fill-color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
 
+  text-align: left;   
+}
+.columna1{
+  margin-right: 150px;
+  margin-bottom: 300px;
+}
+
+.txtmapas{
+  font: size 50px;
+  color: white;
+  text-align: left;
+  margin-bottom: 40px;
+}
 
 .Contenedormapas {
     display: flex;
     align-items: center; 
     justify-content: center; 
     text-align: center; 
-    margin-top: 200px;
+    margin-top: -2px;
+    padding: 300px 0px 100px 0px;
 }
   
 .columna {
@@ -332,11 +455,161 @@ a.btn1banner, a:hover{
     margin-bottom: 400px;
     
 }
->>>>>>> feature/David
-=======
+
 .logo-text {
     color: #4AE49A;
     margin: 0 10px;
 }
->>>>>>> feature/SeanPalomares
->>>>>>> 2b221b465428d2010835c5eddfed846bc5fe3f1f
+.alertas{
+  height: 700px;
+}
+.nosotros{
+  text-align: center;
+  height: 900px;
+  background-image: url("images/bck3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  margin: 5px;
+  border-radius: 50px;
+  border-style:inherit;
+}
+
+.fixed-image {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+}
+
+.text-container {
+  margin: 5px;
+}
+.reference{
+  height: 350px;
+  background-image: url("images/bck4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.custom-button {
+  background-color: #4AE49A;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 33px;
+  width: 186.84px;
+  height: 54px;
+  left: 46.53%;
+  right: 21.18%;
+  top: 770px;
+}
+
+.alert-title {
+  height: 65px;
+  left: 46.53%;
+  right: 21.18%;
+  color: #4AE49A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 65px;
+  top: 200px;
+}
+
+.alert-description {
+  height: 284px;
+  left: 46.53%;
+  right: 10.87%;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #333333;
+  top: 350px;
+}
+
+.alert-img {
+  width: 787px;
+  height: 672px;
+  left: 50.09px;
+  top: 200px;
+}
+.ContenerdorOfrecemos{
+  position: relative;
+  width: 100%;
+  height: 1500px;
+}
+
+.titulito h2{
+  font-size: 32px;
+  position: absolute;
+  top: -100px;
+  right: 50%;
+  transform: translate(50%);
+}
+
+.parrafito p{
+position: absolute;
+top: 100px;
+width: 430px;
+right: 55%;
+color: #888888;
+font-size: 16px;
+line-height: 40px;
+text-align: justify;
+}
+
+.tablet {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  line-height: 0;
+  left: 55%;
+  top: 150px;
+}
+
+.laptop {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  line-height: 0;
+  left: 55%;
+  top: 700px;
+}
+
+.mobile {
+  position: absolute;
+  width: 400px;
+  height: 450px;
+  line-height: 0;
+  right: 55%;
+  top: 400px;
+}
+
+.imagen {
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: 8px solid #4AE49A;
+}
+
+h3 {
+  font-size: 28px;
+}

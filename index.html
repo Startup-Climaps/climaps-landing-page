@@ -5,63 +5,85 @@
 </head>
 <body>
     <!--barra navegadora-->
-    <nav class="navbar">
-        <div class="logo-container">
-            <img src="images/Climaps_icon.png" alt="Logo">
-            <span class="logo-text">Climaps</span>
-        </div>
-        <div class="btn-container">
-            <button class="borderless-btn">Home</button>
-            <button class="borderless-btn">Alertas</button>
-            <button class="borderless-btn">Pronosticos</button>
-            <button class="borderless-btn">Nosotros</button>
-            <button class="borderless-btn">Contacto</button>
-            <button class="borderless-btn">Ofrecemos</button>
-            <button class="round-btn login">Login</button>
-            <button class="round-btn signup">Sign Up</button>
-        </div>
-        <div class="section-container">
-            <a href="#" class="section"></a>
-        </div>
-        
-    </nav>
     <!--Section David-->
-<<<<<<< HEAD
-    <section>
-        <body>
-            <section class="zigzag-section"></section>
-          </body>
-          
-=======
     <section class="mapas">
-        <div class= "Contenedormapas">
-            <div class="columna">
-                <img class="image1" src="images/mapa2.png" class="imgBanner" alt="">
+        <nav class="navbar">
+            <div class="menu-toggle">
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
             </div>
-            <div class="columna">
-                <h1 class="titulocol">CLIM APS</h1>
-                <p id="txtmapas">
-                    Climaps es una plataforma con el objetivo de <br>
-                    brindar alertas e información sobre fenómenos<br>
-                    naturales en distintas zonas geográficas.
-                </p>
-                <div class="botonesimagenes">
-                    <a href="#" class="btn1banner">Button 1</a>
-                    <a href="#" class="btn2banner">Button 2</a>
+            <div class="logo-container">
+                <img src="images/Climaps_icon.png" alt="Logo">
+                <span class="logo-container txt">Climaps</span>
+            </div>
+            <ul>
+                <li><a href="#home" class="borderless-btn">Home</a></li>
+                <li><a href="#alertas" class="borderless-btn">Alertas</a></li>
+                <li><a href="#prono" class="borderless-btn">Pronosticos</a></li>
+                <li><a href="#nostros" class="borderless-btn">Nosotros</a></li>
+                <li><a href="#contacto" class="borderless-btn">Contacto</a></li>
+                <li><a href="#ofrecemos" class="borderless-btn">Ofrecemos</a></li>
+                <li><a href="#" class="round-btn login">Login</a></li>
+                <li><a href="#" class="round-btn signup">Sign Up</a></li>
+            </ul>
+            
+            <div class="section-container">
+                <a href="#" class="section"></a>
+            </div>
+        </nav>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');  
+            const navList = document.querySelector('nav div ul');
+            const logo = document.querySelector('.logo-container');
+        menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active');
+          logo.classList.toggle('inactive');
+          navList.classList.toggle('active');
+        });
+        </script>
+            <div class= "Contenedormapas">
+                <div class="columna">
+                    <img class="image1" src="images/mapa2.png" class="imgBanner" alt="">
                 </div>
-                
-            </div>
-            <div class="columna">
-                <img class="image1" src="images/mapa1.png" class="imgBanner2" alt="">
-            </div>
+                <div class="columna1">
+                    <h1 class="titulocol">CLIMAPS</h1>
+                    <p id="txtmapas" class="txtmapas">
+                        Climaps es una plataforma con el objetivo de <br>
+                        brindar alertas e información sobre fenómenos<br>
+                        naturales en distintas zonas geográficas.
+                    </p>
+                    <div class="botonesimagenes">
+                        <a href="#" class="btn1banner">Button 1</a>
+                        <a href="#" class="btn2banner">Button 2</a>
+                    </div>
+                    
+                </div>
+                <div class="columna">
+                    <img class="image1" src="images/mapa1.png" class="imgBanner2" alt="">
+                </div>
+    
+            </div> 
+      
+        
 
-        </div>
-
->>>>>>> feature/David
     </section>
     <!--Section Pablo-->
     <section>
-
+<div class="alertas">
+</section>
+<div class="alert-section">
+    <div class="alert-image">
+      <img src="images/alertas.PNG" alt="Imagen de Alerta" class="alert-img">
+    </div>
+    <div class="alert-content">
+      <h2 class="alert-title">Alertas</h2>
+      <p class="alert-description">Reciba alertas e informese en tiempo real sobre los principales acontecimientos naturales en diferentes lugares del Perú, evite retrasos, cancelaciones de viaje, postergaciones de planes, entre otros.</p>
+      <button class="custom-button">MORE</button>
+    </div>
+  </div>
+<section>
+</div>
     </section>
     <!--Section Uriel-->
     <section class="backprono">
@@ -97,44 +119,67 @@
     </section>
     <!--Section Omar-->
     <section class="ofrecemos">
-        <div class="titulito">
+        <div class="ContenerdorOfrecemos">
+            <div class="titulito">
             <h2>Ofrecemos</h2>
+            </div>
+            <div class="parrafito">
+                <p>
+                    Desarrollo de una solución disponible para diferentes plataformas, perfecta para poder realizar las operaciones mencionadas anteriormente
+                </p>
+            </div>
+            <div class="tablet">
+                <img class= "imagen" src="images/tabletapp.png" alt="">
+                <h3>Tablet App</h3>
+            </div>
+            <div class="laptop">
+                <img class= "imagen" src="images/webaaphome.png" alt="">
+                <h3>Mobile App</h3>
+            </div>
+            <div class="mobile">
+                <img class= "imagen" src="images/mobileapp.png" alt="">
+                <h3>Web App Home</h3>
+            </div>
         </div>
-        <div class="parrafito">
-            <p>
-                Desarrollo de una solución disponible para diferentes plataformas, perfecta para poder realizar las operaciones mencionadas anteriormente
-            </p>
-        </div>
-        <div class="tablet">
-            <img class= "imagen" src="images/tabletapp.png" alt="">
-            <h3>Tablet App</h3>
-        </div>
-        <div class="laptop">
-            <img class= "imagen" src="images/webaaphome.png" alt="">
-            <h3>Mobile App</h3>
-        </div>
-        <div class="mobile">
-            <img class= "imagen" src="images/mobileapp.png" alt="">
-            <h3>Web App Home</h3>
-        </div>
-        
     </section>
     <!--Section Ricaldi-->
     <section>
-
+<section class="nosotros">
+        <h2>Nosotros</h2>
+        <div class="container">
+            <div class="image-container">
+                <img src="images/mapa_sismico_2017_b1.jpg" alt="Mapa">
+            </div>
+            <div class="text-container">
+                <p>
+                    Startup peruana, con el objetivo de evitar accidentes, reprogramaciones, entre otros problemas que se presentan al momento de viajar sin antes planificar, realizar actividades en lugares propensos a desastres naturales.
+                </p>
+            </div>
+            <div class="image-container"></div>
+                <img src="images/OverDrop-Weather.jpg" alt="Info">
+                
+            </div>
+        </div>
+    </section>
+</div>
     </section>
     <!--Section Uriel-->
     <section>
-        <!-- <section class="contact-section">
+        <section class="contact-section">
             <h1>Contacto</h1>
             <h2>Lorem Ipsum</h2>
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Teléfono">
+            <input type="text" placeholder="Nombre" class="edit-input">
+            <input type="text" placeholder="Email" class="edit-input">
+            <input type="text" placeholder="Teléfono" class="edit-input">
             <input type="text" placeholder="Editar" class="edit-input">
             <button type="submit">Enviar</button>
           </section>
-           -->
+           
+    </section>
+    <section>
+        <div class="reference">
+
+        </div>
     </section>
 </body>
 </html>
