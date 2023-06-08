@@ -277,26 +277,31 @@ section.ofrecemos {
 
 a.btn1banner{
     background-color: cadetblue;
+    font-size: 12px;
     color: white;
-    padding: 14px 75px;
+    padding: 7px 50px;
     border-radius: 25px;
     border-color: white;
     border: 2px solid white;
+    
     text-decoration: none;
 }
 a.btn2banner{
     background-color: #4CBB88;
     color: white;
-    padding: 14px 75px;
+    font-size: 12px;
+    padding: 7px 50px;
     border-radius: 25px;
     border-color: white;
     border: 2px solid white;
     text-decoration: none;
+    margin-left: 30px;
 }
 a.btn1banner, a:hover{
+    margin-left:30px;
     background-color:#4AE49A;
     color: white;
-    padding: 14px 75px;
+    padding: 7px 50px;
     border-radius: 25px;
     border-color: white;
     text-decoration: none;
@@ -324,14 +329,31 @@ a.btn1banner, a:hover{
 
 .titulocol{
     font-size:50px;
-    color:black;
+    color:white;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 400px;
-    
+    text-align: left;   
 }
+
+.columna1{
+  margin-right: 150px;
+  margin-bottom: 300px;
+}
+
+.txtmapas{
+  font: size 50px;
+  color: white;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+/*
+
+
 >>>>>>> feature/David
 =======
 .logo-text {
@@ -340,3 +362,4 @@ a.btn1banner, a:hover{
 }
 >>>>>>> feature/SeanPalomares
 >>>>>>> 2b221b465428d2010835c5eddfed846bc5fe3f1f
+*/
